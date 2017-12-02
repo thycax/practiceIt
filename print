@@ -1,0 +1,16 @@
+// Java Arrays - print
+// Accepts an array of integers as a parameter and
+// prints the contents of the array to System.out as a bracketed, comma-separated list
+// Method problem 
+
+public void print(int[] list) {
+    System.out.print("[");
+    if (list.length > 0) {
+        System.out.print(list[0]);
+        for (int i = 1; i < list.length; i++) {
+            System.out.print(", ");
+            System.out.print(list[i]);
+        }
+    }
+    System.out.print("]");
+}
