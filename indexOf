@@ -1,4 +1,5 @@
 // Java Arrays - indexOf
+// Returns the index of a particular value in an array of integers. 
 // Method problem 
 
 public int indexOf(int[] list, int value) {
@@ -7,5 +8,5 @@ public int indexOf(int[] list, int value) {
             return i;
         }
     }
-    return -1;
+    return -1; 
 }
