@@ -1,0 +1,13 @@
+// Java Arrays - findMin
+// Returns the minimum value in an array of integers
+// Method problem 
+
+public int findMin(int list[]) {
+    int min = list[0];
+    for (int i = 1; i < list.length - 1; i++) {
+        if (list[i] < min) {
+               return list[i];
+        }
+    }
+    return min;
+}
