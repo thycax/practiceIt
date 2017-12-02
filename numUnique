@@ -1,0 +1,21 @@
+// Java Arrays - numUnique
+// Accepts a sorted array of integers as a parameter and 
+// Returns the number of unique values in the array
+// Method problem
+
+public int numUnique(int[] list) {
+    int unique = 0;
+    if (list.length > 0) {
+        unique = 1; 
+        for (int i = 0; i < list.length - 1; i++) {
+            int oldValue = list[i];
+            int newValue = list[i + 1];
+            if (oldValue != newValue) {
+                unique++;
+            } 
+        }
+    } else {
+        unique = 0;
+    }
+    return unique; 
+}
